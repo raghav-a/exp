@@ -1,0 +1,337 @@
+introduction abt myself
+
+- abt others 10 mins intro of students
+
+a lil intro abt love for java
+
+java in interesting and powerful language
+and programming in java feels very natural speciually coz of its oo strcuture i fins it much more natural to me after being exposed to c initially
+
+we will start with a quiz and the purpose is not to judge you u hv already gone thru duiring the interview...so i wud suggest participtae more dun be afraid of making mistakes
+
+we have very lil time to cover so many concepts so i am not sure if i can really do justice to it but let me try my best
+
+you can ask questions if we know we will answer and try to keep ur question wihin the scope of this training
+
+
+
+1-    5 main features of java
+
+
+Portable
+OO
+Support for concurrent application
+GC
+Type safety
+SO many libraries
+web, mobile, desktop, networking...
+
+
+2 JVM JRE, JDK 
+
+JVM - interprets the byte code inordr to execute the java prog, manages heap
+deosnt understand .java files
+
+registers, stack, garbage heap, method area
+
+
+JRE provides libraries, JVM and other componenst to run and manage a java program
+
+ava Development Kit (JDK) The JDK is a superset of the JRE, tools such as the compilers and debuggers necessary for developing applets and applications.
+
+open jdk and orcale jdk
+
+
+------------variables
+
+
+3- different types of variables in java?
+primitives and instance
+
+4- how many primitives?
+
+5- Primitives also have wrapper classes
+
+Autoboxing and Unboxing --- code ref Questions autoBoxing
+
+compiler deos that primitive to wrapper classes
+
+how many ways of looping?
+
+how many boolean test?
+
+------------------------------
+Hello world program
+
+Control flow, source file, byte code
+
+classes and objects
+--------------------------------------------
+
+Main thread and main method
+
+whats a class, object 
+blueprint, specification, design
+
+whats the difference between object variables and local variables
+default values
+
+whats a dafult value of string
+
+how do u create an instance of a class?
+
+What is the difference between a constructor and a method?
+- A constructor is a member function of a class that is used to create objects of that class, invoked using the new operator.
+
+Constructor and how do you instantiate an object
+
+is java pass by value or pass by refrence? code example
+
+Whats method overloading in java? code example
+return types
+
+static members
+
+public class IdentifyMyParts {
+    public static int x = 7;
+    public int y = 3;
+}
+
+Whats a class variable?
+Whats an instance variable?
+
+
+
+- What does the “static” keyword mean ? 
+The static keyword denotes that a member variable or method can be accessed, without requiring an instantiation of the class to which it belongs. 
+
+- Can you override private or static method in Java ?
+A user cannot override static methods in Java, because method overriding is based upon dynamic binding at runtime and static methods are statically binded at compile time. A static method is not associated with any instance of a class so the concept is not applicable.
+
+- Now "static variables" are class variables i.e., there will be only one copy for each class and not one copy for each object of the class and these variables will be accessed without instantiating the class. 
+
+- Can you access non static variable in static context
+static variables are initilaized wen a class is loaded and which may happen bfor an object is instantiated
+
+A static variable in Java belongs to its class and its value remains the same for all its instances. A static variable is initialized when the class is loaded by the JVM. If your code tries to access a non-static variable, without any instance, the compiler will complain, because those variables are not created yet and they are not associated with any instance.
+
+Difference between static final and final variable
+
+initialization blocks
+
+Initialization blocks execute in the order they appear.
+Static Initialization blocks run once when the class is first loaded.
+Instance Initialization blocks run every time a class instance is created.
+Instance Initialization blocks run after the constructor’s call to super().
+
+Inner classes 
+
+What is the difference between a static and a non-static inner class? 
+
+Like static methods and static members are defined in a class, a class can also be static. To specify the static class, prefix the keyword ‘static’ before the keyword ‘class’.
+Example : public static class InnerClass { … }
+Differences between static classes and non-static classes:
+A static inner class is like other regular classes. They need to be referred by the class name being it is static, e.g. OuterClass.InnerClass. A static inner class can have access even to the private members of the outer class.
+
+
+The non-static inner class has the reference that is not visible in the outer class. To utilize the non-static inner class attributes and methods, its instance is to be created in the outer class.
+
+
+------------
+
+Inheritance and ploymorphism
+
+
+------------------------------
+
+what is inheritance and what do we achieve by that?
+
+reusablity and polymorphism
+
+Class B extends Class A there is method foo in both you are in class B how how you call method foo of class A?
+
+this, super
+
+constructor
+
+What restriction is there on using the super and this reference in a constructor? 
+
+Does a subclass inherit both member variables and methods?
+
+How would you enforce a method to be not inherited by the subclass
+
+The purpose of an abstract class is to implement the concept abstraction that is what to do, but not why to do.
+
+
+different acccess sepcifiers?
+
+final
+
+final variable, final method, final class
+
+Can a top-level class be private or protected?
+
+you don't want a class inherited by any other class - String class 
+
+All java classes inherit which class?
+
+Methods of object class?
+
+Why have Arrays of different objects ?
+
+All java classes do a default import of one package classes. what's that?
+
+You don't want a class to be instantiated ever how would you achieve that?
+
+What do you achieve by marking a method abstract on a class?
+
+what is method overriding in java?
+
+
+Where and how can you use a private constructor?
+Private constructor can be used if you do not want any other class to instantiate the class. This concept is generally used in Singleton Design Pattern. The instantiation of such classes is done from a static public method.
+
+Does a class inherit the constructors of its superclass?
+A class does not inherit constructors from any of its super classes.
+
+Difference between inheritance and composition?
+
+Polymorphism is the ability of programming languages to present the same interface for differing underlying data types. 
+
+
+-----------------------------------------------
+static
+
+access scopes
+
+public private protected
+
+can a class have a private constructor?
+
+singleton
+
+Collections
+
+Comparators
+SortedSet
+
+Libraries
+
+Network sockets and multithreading applications
+
+Exception Handling
+-------------------------
+Checked Exceptions vs. Unchecked Exceptions  
+
+how are excpetions generated in java
+There are 3 ways in which the exceptions are generated ?
+- The JVM can generate exceptions which are beyond the control of the User.
+- A few standard exceptions that can be generated due to an error in the program and which need to be handled manually. 
+- The third way is to directly throw an exception. However, it is handled in the similar fashion.
+
+Checked Exceptions
+A checked exception is a subclass of Exception excluding class RuntimeException and its subclasses.
+Compiler checks to see if these exceptions have been properly caught or not. Else the code doesnt compile. Thus, a program is forced to deal with the situations where an exception can be thrown.
+Checked exceptions must be either declared or caught at compile time.
+
+Unchecked Exceptions
+Unchecked exceptions are RuntimeException and all of its subclasses along with class java.lang.Error and its subclasses also are unchecked.
+A program does compile without these exceptions being handled during compile time.
+
+how would you define a contract where a method would throw a checked excpetion
+
+--------------------------
+
+
+Access Specifiers
+
+
+Java supports 3 ways of creating instances.
+By using new operator – Ex : Product prodMouse = new Product();
+By using Class.forName(classname).newInstance() method 
+Ex: Class.forName(Product).newInstance();
+By using clone() method - Ex: Object copy = obj.clone(); 
+
+
+
+
+What is the difference between the String and StringBuffer classes?  
+String class is immutable. The characters of string objects can not be changed / modified. StringBuffer is mutable. The characters of StringBuffer objects can be modified / changed.
+String class is used for simple investigations on string objects.
+StringBuffer’s performance is faster than String when concatenating other strings. String class concatenates the other string by using + sign. After concatenation, it returns another String object. This string object can be reassigned to the original String reference.
+Ex : str = str + “to India” ;// where str=”Welcome”
+The concatenation creates a temporary String object, and is reassigned to str.
+Using StringBuffer, the concatenation is done by using append() method.
+Ex : str.append(“to India”); // str is a StringBuffer object’s reference variable and //assigned “Welcome”.
+The conctention is done only by appending the “string to India” to the original StringBuffer object “Welcome”.
+
+What is the functionality of instanceOf() ?
+instanceOf opertaor is used to check whether an object can be cast to a specific type without throwing ClassCastException.
+
+Collections
+
+-------------------------------------------
+
+What is the Vector class?  
+
+The capability of implementing a growable array of object is provided by the class Vector.
+A Vector class implements the dynamic array that can grow and shrink at run time (dynamically). It resembles the implementation of ArrayList with a difference that Vector is synchronized.
+
+What is difference between sets and lists?
+Sets can have unique values.
+Lists can have duplicate values. 
+Set is an unordered collection.
+List is an ordered collection. 
+
+Which two method you need to implement to use an Object as key in HashMap?
+-In order to use any object as Key in HashMap or Hashtable, it must implements equals and hashcode method in Java.
+
+
+What’s wrong using HashMap in multithreaded environment? When get() method go to infinite loop?
+Well nothing is wrong, it depending upon how you use. For example if you initialize the HashMap just by one thread and then all threads are only reading from it, then it's perfectly fine. One example of this is a Map which contains configuration properties. Real problem starts when at-least one of those thread is updating HashMap i.e. adding, changing or removing any key value pair. Since put() operation can cause re-sizing and which can further lead to infinite loop, that's why either you should use Hashtable or ConcurrentHashMap, later is better. 
+
+----------------------------------------------------
+Garbage Collection
+--------------------------------------------
+
+When is an object eligible for garbage collection?
+
+finalize() 
+is called before Garbage collector reclaim the Object, its last chance for any object to perform cleanup activity i.e. releasing any system resources held, closing connection if open etc.
+
+@Override
+    protected void finalize() throws Throwable {
+        try{
+            System.out.println("Finalize of Sub Class");
+            //release resources, perform cleanup ;
+        }catch(Throwable t){
+            throw t;
+        }finally{
+            System.out.println("Calling finalize of Super Class");
+            super.finalize();
+        }
+      
+}
+
+Read more: http://javarevisited.blogspot.com/2012/03/finalize-method-in-java-tutorial.html#ixzz3f0ByuZWc
+
+Read more: http://javarevisited.blogspot.com/2012/03/finalize-method-in-java-tutorial.html#ixzz3f0AvoDW0
+
+Explain how to force garbage collection?
+Garbage collection can't be forced, it can explicitly be called using System.gc(), but there is not guarantee that GC will be started immediatel
+
+-------------------------------------------
+
+How are this() and super() used with constructors?  
+this() constructor is invoked within a method of a class, if the execution of the constructor is to be done before the functionality of that method.
+
+----------------------------------
+
+
+Give a simplest way to find out the time a method takes for execution without using any profiling tool?
+
+long start = System.currentTimeMillis (); method (); long end = System.currentTimeMillis (); System.out.println (“Time taken for execution is ” + (end – start));
+
+Read more: http://javarevisited.blogspot.com/2011/04/top-20-core-java-interview-questions.html#ixzz3f0N9PPuH
+
+Read more: http://javarevisited.blogspot.com/2011/04/top-20-core-java-interview-questions.html#ixzz3f0N4byfM

@@ -1,1 +1,1 @@
-java -classpath c:\code\training exp.HelloWorld
+java -classpath /Users/raghav.ag/trainings/java/exp exp.HelloWorld
